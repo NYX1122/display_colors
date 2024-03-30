@@ -1,7 +1,7 @@
 {
   "name": "display_colors",
   "version": "1.0.0",
-  "description": "Displays hex colors in the terminal.",
+  "description": "Displays colors in the terminal.",
   "type": "module",
   "main": "./dist/app.js",
   "types": "./dist/app.d.ts",
@@ -15,8 +15,16 @@
     "lint": "eslint --ext .ts src",
     "lint:fix": "eslint --ext .ts src --fix"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NYX1122/display_colors.git"
+  },
   "author": "BoDee Angus",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NYX1122/display_colors/issues"
+  },
+  "homepage": "https://github.com/NYX1122/display_colors#readme",
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.30",

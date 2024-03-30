@@ -4,6 +4,9 @@ const config: Config.InitialOptions = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   rootDir: './src',
+  transform: {
+    '^.+\\.ts$': ['ts-jest', { useESM: true }]
+  },
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
   },
