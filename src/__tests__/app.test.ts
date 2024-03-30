@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import displayColors from '../app';
+import displayColors from '../app.js';
 
 // Define a custom console object type
 type CustomConsole = {

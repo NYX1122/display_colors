@@ -7,6 +7,7 @@ const config: Config.InitialOptions = {
   transform: {
     '^.+\\.ts$': ['ts-jest', { useESM: true }]
   },
+  transformIgnorePatterns: ['node_modules/(?!(chalk)/)'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
   },
