@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "ES2020",
+    "target": "es2020",
+    "module": "ESNext",
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -12,19 +12,16 @@
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "resolveJsonModule": true,
   },
   "include": [
     "src/**/*",
-    "jest.config.ts"
   ],
   "exclude": [
     "node_modules",
-    "dist"
-  ],
-  "ts-node": {
-    "esm": true,
-    "experimentalSpecifierResolution": "node"
-  }
+    "dist",
+    "**/*.spec.ts", // Exclude test files from the build output if they are in 'src'
+    "**/*.test.ts" // Exclude test files from the build output if they are in 'src'
+  ]
 }
